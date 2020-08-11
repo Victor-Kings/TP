@@ -1,0 +1,82 @@
+.banner img {
+    padding-top: 4px;
+    width: 100%;
+}
+
+.banner {
+    background-color: #022300;
+    border-style: solid;
+    border-width: 1em;
+    border-color: #022300;
+}
+
+.Perfil {
+    background-color: #022300;
+    padding-top: 4px;
+    border-style: solid;
+    border-width: 1em;
+    border-color: #022300;
+    position: absolute;
+    left: 5%;
+    top: 19vw;
+}
+
+.Perfil img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.TituloNome {
+    padding-top: 2%;
+    padding-left: 25%;
+    padding-bottom: 10px;
+}
+
+.Links a {
+    margin-left: 70vw;
+}
+
+.desc {
+    background-color: #65ad95;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #022300;
+    width: 100%;
+}
+
+.letra1 {
+    color: #4d0000;
+}
+
+.letra2 {
+    font-style: italic;
+    font-family: Georgia;
+}
+
+.letra3 {
+    font-family: Arial;
+    text-decoration: line-through;
+}
+
+.letra4 {
+    text-align: center;
+    font-family: Arial;
+}
+
+p {
+    margin: 10px;
+    text-align: start;
+    font-size: 20px;
+    font-family: Impact;
+}
+
+h1 {
+    font-weight: 700;
+    color: #022300;
+    font-family: Arial;
+    font-size: 3vw;
+}
+
+body {
+    background-color: #4dae8d;
+}

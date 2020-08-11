@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> Tabela </title>
+    <style>
+        tr,
+        th,
+        td {
+            border: solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            Tabela com cabeçalho na primeira linha e coluna
+        </caption>
+        <thead>
+            <tr>
+                <th> Cabeçalho Linha 1 - Coluna 1 </th>
+                <th> Cabeçalho Linha 1 - Coluna 2 </th>
+                <th> Cabeçalho Linha 1 - Coluna 3 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"> Linha 2 - Colunas 1 e 2 da tabela </td>
+                <td rowspan="2"> Linhas 2 e 3 - Coluna 3 da tabela </td>
+            </tr>
+            <tr>
+                <th> Cabeçalho Linha 3 - Coluna 1 </th>
+                <td> Linha 3 - Coluna 2 </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

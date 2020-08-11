@@ -1,0 +1,38 @@
+body{
+    background-color: #e445e4;
+    background-image: url('img_tree.png');
+    background-repeat: no-repeat;
+    background-size: 400px 712px;
+}
+
+h1 {
+    color: #455de4;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+#p1{
+    color: red;
+    text-align: center;
+}
+
+.centralizado{
+    text-align: center;
+    color: green;
+    font-family: 'Courier New';
+}
+div{
+    width:200px;
+    height: 200px;
+    border: 2px solid blue;
+    background-image: -webkit-linear-gradient(green, red);
+}
+
+
+
+
+
+
+
+
+
