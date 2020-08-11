@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.divMain{
+		border:1px solid;
+		width:500px;
+	    height:2000px;
+	    position:absolute;
+	}
+	.div{
+		border:1px solid;
+		width:400px;
+	    height:1500px;
+	    margin-left:50px;
+	    margin-top:50px;
+	}
+	.divStatic{
+	 	position:static;
+	    width:100px;
+	    height:100px;
+	    background:blue;
+	    left:100px;
+	    top:100px;
+	}
+	.divRelative {
+		position:relative;
+	    width:100px;
+	    height:100px;
+	    background:green;
+	    left:100px;
+	    top:100px;
+	}
+	.divAbsolute{
+		position:absolute;
+	    width:100px;
+	    height:100px;
+	    background:red;
+	    left:100px;
+	    top:100px;
+	}
+	.divFixed{
+		position:fixed;
+	    width:100px;
+	    height:100px;
+	    background:orange;
+	    left:600px;
+	    top:100px;
+	}
+</style>
+</head>
+
+<body>
+<div class="divMain">
+	<div class="div">
+		<div class="divStatic">divStatic</div>
+		<div class="divRelative">divRelative</div>
+		<div class="divAbsolute">divAbsolute</div>
+		<div class="divFixed">divFixed</div>
+	</div>
+</div>
+
+</body>
+</html>
