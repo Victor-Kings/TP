@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title> Formulário </title>
+	<style>
+		* {
+			font-family: Courier New, Courier, monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<h1> DataList e Select</h1>
+	<form name="exemplo4">
+        Esporte favorito....: 
+        <input type="text" name="nome" list="esporte"/>
+        <datalist id="esporte">
+            <option value="Basquete"/>
+            <option value="Futebol"/>
+            <option value="Futebol Americano"/>
+            <option value="Handbol"/>
+            <option value="Natação"/>
+            <option value="Voleibol"/>
+        </datalist> <br/>
+        Estado..............:
+        <select name="estado">
+			<option value="MG">MG</option>
+			<option selected value="SP">SP</option>
+			<option value="RJ">RJ</option>
+		</select>
+	</form>
+</body>
+
+</html>

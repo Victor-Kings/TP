@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title> Formulário </title>
+	<style>
+		* {
+			font-family: Courier New, Courier, monospace;
+		}
+		input:required:invalid,
+		input:focus:invalid {
+			background-color: red;
+		}
+		input:required:valid {
+			background-color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Validação Visual</h1>
+	<form name="exemplo6">
+		Nome..........: <input type="text" name="nome" placeholder="Informe seu nome" required /><br> 
+		Email.........: <input type="email" name="email" required placeholder="Informe um email válido" /><br> 
+		Site..........: <input type="url" name="site" pattern="http://www.+\..+" placeholder="http://www.seusite.com"/><br>
+		Idade.........: <input type="number" size="6" name="idade" min="18" max="99" value="21" /><br> 
+		Nascimento....: <input type="date" name="nasc" required /><br>
+		<input type="submit" value="Submit" />
+	</form>
+</body>
+
+</html>
