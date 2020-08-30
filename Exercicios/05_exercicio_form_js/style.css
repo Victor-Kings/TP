@@ -1,0 +1,65 @@
+td {
+    background-color: #b007e7;
+    color: #eed7f7;
+}
+
+h3,
+h1,
+bory,
+td {
+    font-family: Arial;
+}
+
+body {
+    background-color: rgb(246, 222, 252);
+}
+
+.buttonStyle {
+    font-family: Arial;
+    background-color: #4b0762;
+    color: rgb(246, 222, 252);
+}
+
+.inputStyle1 {
+    width: 95%;
+    background-color: rgb(246, 215, 255);
+}
+
+.tdStyle1 {
+    width: 50vw;
+}
+
+.tdStyle2 {
+    font-family: Arial;
+    color: #eed7f7;
+    width: 10vw;
+    background-color: #4b0762;
+}
+
+.inputStyle2 {
+    flex-wrap: nowrap;
+}
+
+.inputStyle3 {
+    background-color: rgb(246, 215, 255);
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:required:invalid,
+input:required:invalid,
+textarea,
+input:focus:invalid {
+    background: url("./img/wrong.gif") no-repeat;
+    background-position: right;
+    background-color: rgb(246, 215, 255);
+}
+
+textarea,
+input:required:valid {
+    background: url("./img/check.png") no-repeat;
+    background-position: right;
+    background-color: rgb(246, 215, 255);
+}

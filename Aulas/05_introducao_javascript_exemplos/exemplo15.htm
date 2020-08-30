@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+		function validaForm() {
+			var nome = document.meuForm.nome.value;
+			if (nome == null || nome == '') {
+				alert('Nome deve ser obrigatório');
+				return false;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form name="meuForm">
+		Nome: <input type="text" name="nome">
+		<input type="button" value="Enviar" onClick="validaForm();">
+	</form>
+</body>
+
+</html>

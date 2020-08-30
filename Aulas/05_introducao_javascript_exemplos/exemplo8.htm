@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Date</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <script>
+        var data = new Date(); //obtém data da máquina
+        var resultado = 'Data obtida: ' + data.toString() + '<br>';
+        resultado += 'Hora: ' + data.getHours() + '<br>';
+        resultado += 'Dia: ' + data.getDate() + '<br>';
+        resultado += 'Ano: ' + data.getFullYear() + '<br>';
+        resultado += 'Dia da Semana: ' + data.getDay() + '<br>';
+        resultado += 'GMT: ' + data.toGMTString() + '<br>';
+        resultado += 'Local Data: ' + data.toLocaleDateString() + '<br>';
+        resultado += 'Local Hora: ' + data.toLocaleTimeString() + '<br>';
+        resultado += 'Padrão Local: ' + data.toLocaleString();
+        document.getElementById('resultado').innerHTML = resultado;
+    </script>
+</body>
+
+</html>

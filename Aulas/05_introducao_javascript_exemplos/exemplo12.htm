@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - For</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <script>
+        var vetor = new Array(4);
+        var i;
+        for (i = 0; i < vetor.length; i++)
+            vetor[i] = prompt("Digite um valor:");
+        
+        var resultado = '';
+        for (i = 0; i < vetor.length; i++)
+            resultado += vetor[i] + '<br>';
+
+        document.getElementById('resultado').innerHTML = resultado;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - For</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <script>
+        var text = 'Isto é uma string de teste.';
+        var resultado = '';
+        var palavras = text.split(' ');
+        for (var i = 0; i < palavras.length; i++) {
+            resultado += palavras[i] + '<br>';
+        }
+        document.getElementById('resultado').innerHTML = resultado;
+    </script>
+</body>
+
+</html>

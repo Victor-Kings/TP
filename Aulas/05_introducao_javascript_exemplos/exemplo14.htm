@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <p>Clique no botão para exibir uma janela CONFIRM.</p>
+  <button onClick="minhaFuncao();">Clique aqui!</button>
+  <p id="resultado"></p>
+  <script>
+    function minhaFuncao() {
+      var resultado;
+      var opcao = confirm('Clique em um botão!');
+      if (opcao == true)
+        resultado = 'Você clicou em OK!';
+      else
+        resultado = 'Você clicou em Cancelar!';
+      document.getElementById('resultado').innerHTML = resultado;
+    }
+  </script>
+
+</body>
+
+</html>

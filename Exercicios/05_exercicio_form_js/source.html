@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Curriculo</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <h1>Cadastre Seu Curriculo</h1>
+    <form name="cadastro" autocomplete="off" method="post">
+        <table>
+            <h3> 1.Dados Pessoais</h3>
+            <tr>
+                <td class="tdStyle2">Nome: </td>
+
+                <td class="tdStyle1"> <input class="inputStyle1" name="nome" type="text" placeholder="Digite seu nome" required/></td>
+            </tr>
+            <tr>
+                <td class="tdStyle2">Data de nascimento: </td>
+                <td><input class="inputStyle1" type="date" name="data" /></td>
+            </tr>
+            <tr>
+                <td class="tdStyle2">Estado Civil: </td>
+                <td>
+                    <select class="inputStyle1" name="estadoCivil">
+                     <option value="" selected disabled hidden>Selecione o estado civil</option>
+                     <option name="Solteiro" value="Solteiro" >Solteiro</option>
+                     <option name="Casado" value="Casado" >Casado</option>
+                     <option name="Viúvo" value="Viúvo" >Viúvo</option>
+                     <option name="Divorciado" value="Divorciado" >Divorciado</option>
+                    </select>
+                    <span class="SpanEstado" id="SpanEstado"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdStyle2">Sexo: </td>
+                <td>
+                    <input type="radio" name="sexo" value="Masculino">Masculino </input>
+                    <input type="radio" name="sexo" value="Feminino">Feminino </input>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <h3>2.Objetivo </h3>
+            <tr>
+                <td class="tdStyle2">Objetivo: </td>
+                <td class="tdStyle1">
+                    <textarea class="inputStyle1" name="Objetivo" cols="50" rows="2" required placeholder="Digite seu objetivo"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <h3>3.Contato </h3>
+            <tr>
+                <td class="tdStyle2">Endereço: </td>
+                <td class="tdStyle1">
+                    <textarea class=" inputStyle1 " name="endereço " cols="50 " rows="1 " required placeholder="Digite seu Endereço "></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdStyle2">Cidade/Estado: </td>
+                <td class="tdStyle1">
+
+                    <input class="inputStyle2" name="Cidade " required placeholder="Digite sua Cidade "></input> /
+                    <input class="inputStyle2" name="Estado " required placeholder="Digite seu Estado " pattern="[A-Z]{2}"></input>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdStyle2">CEP: </td>
+                <td class="tdStyle1">
+
+                    <input class="inputStyle1" name="CEP " required placeholder="Digite seu CEP no formato 99999-999" pattern="[0-9]{5}[-][0-9]{3}"></input>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdStyle2">Telefone: </td>
+                <td class="tdStyle1">
+
+                    <input class="inputStyle1" name="telefone" placeholder="Digite seu Telefone no formato (99) 99999-9999 " pattern="[\(][0-9]{2}[\)][0-9]{5}[-][0-9]{4}"></input>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdStyle2">E-email </td>
+                <td class="tdStyle1">
+
+                    <input class="inputStyle1" name="email" type="email" placeholder="Digite seu e-mail"></input>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdStyle2">Rede Social </td>
+                <td class="tdStyle1">
+
+                    <img src="./img/face.png"> http://facebook.com/ <input class="inputStyle3" type="text" placeholder="Perfil facebook" /> <br>
+                    <img src="./img/linkedin.png"> http://linkedin.com/ <input class="inputStyle3" type="text" placeholder="Perfil linkedin" /> <br>
+                    <img src="./img/skype.png">
+                    <input class="inputStyle3" type="text" placeholder="Perfil skype">
+
+                </td>
+            </tr>
+
+        </table>
+
+
+        <table>
+            <h3>4.Conhecimentos </h3>
+            <tr>
+                <td class="tdStyle2">Linguagens de Programação </td>
+                <td class="tdStyle1">
+
+                    <input id=LinC type="checkbox" value="C/C++">C/C++ </input><br>
+                    <input id=LinJava type="checkbox" value="Java">Java </input><br>
+                    <input id=LinVB type="checkbox" value="Visual Basic">Visual Basic </input><br>
+                    <input id=LinNet type="checkbox" value=".NET">.NET </input><br>
+                    <input id=LinPHP type="checkbox" value="PHP">PHP </input><br>
+                    <input id=LinPython type="checkbox" value="Python">Python </input><br>
+                    <input id=LinHTML type="checkbox" value="HTML">HTML </input>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="tdStyle2">Idiomas</td>
+                <td class="tdStyle1">
+
+                    Inglês
+                    <select class="inputStyle3" name="idiomaIngles">
+                    <option value="" selected disabled hidden>Nivel</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermediario">Intermediario</option>
+                    <option value="Avançado">Avançado</option>
+                </select> Espanhol
+                    <select class="inputStyle3" name="idiomaEspanhol">s
+                    <option value="" selected disabled hidden>Nivel</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermediario">Intermediario</option>
+                    <option value="Avançado">Avançado</option>
+                </select>
+
+                </td>
+            </tr>
+
+        </table>
+
+        <input class="buttonStyle" type="button" value="Limpar" class="buttons" onCLick="LimparCampos();">
+        <input class="buttonStyle" type="button" value="Enviar" class="buttons" onCLick="ValidarCampos();">
+    </form>
+
+</body>
+
+</html>
+
+<!-- Exemplo do CEP  pattern="[0-9]{5}[-][0-9]{3} "

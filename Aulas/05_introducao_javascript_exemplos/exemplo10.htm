@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Date com Switch</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <script>
+        var data = new Date(); //obtém data da máquina
+        var resultado;
+        var diaSemana = data.getDay();
+        switch(diaSemana){
+            case 0: resultado = 'Domingo'; break;
+            case 1: resultado = 'Segunda'; break;
+            case 2: resultado = 'Terça'; break;
+            case 3: resultado = 'Quarta'; break;
+            case 4: resultado = 'Quinta'; break;
+            case 5: resultado = 'Sexta'; break;
+            case 6: resultado = 'Sábado'; break;
+        }
+        document.getElementById('resultado').innerHTML = resultado;
+    </script>
+</body>
+
+</html>

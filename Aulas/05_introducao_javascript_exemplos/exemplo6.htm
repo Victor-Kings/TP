@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - String</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <script>
+        var frase = String('Programação Web na PUC-Campinas');
+        var resultado = frase + '<br>';
+        resultado += frase.big() + '<br>';
+        resultado += frase.blink() + '<br>';
+        resultado += frase.sup() + '<br>';
+        resultado += frase.sub() + '<br>';
+        resultado += frase.strike() + '<br>';
+        resultado += frase.bold() + '<br>';
+        resultado += frase.italics() + '<br>';
+        resultado += frase.small() + '<br>';
+        resultado += frase.link('http://www.puc-campinas.edu.br');
+        document.getElementById('resultado').innerHTML = resultado;
+    </script>
+</body>
+
+</html>

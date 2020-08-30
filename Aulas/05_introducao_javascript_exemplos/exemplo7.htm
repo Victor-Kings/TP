@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Number</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <script>
+        var numero = new Number(34.8896);
+        var resultado = 'Valor inicial: ' + numero + '<br>';
+        resultado += 'Exponencial(3): ' + numero.toExponential(3) + '<br>';
+        resultado += 'Algarismos(3):' + numero.toPrecision(3) + '<br>'; // 3 algarismos.
+        resultado += 'Precisão(6):' + numero.toFixed(6); //6 casas decimais.
+        document.getElementById('resultado').innerHTML = resultado;
+    </script>
+</body>
+
+</html>
