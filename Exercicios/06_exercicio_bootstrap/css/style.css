@@ -1,0 +1,18 @@
+.carrosel {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 1%;
+}
+
+.borda {
+    border: none !important;
+}
+
+.menu {
+    background-color: #ed1d24 !important;
+}
+
+.fundo {
+    background-image: url("../img/galaxia.png");
+    max-width: 100%;
+}
