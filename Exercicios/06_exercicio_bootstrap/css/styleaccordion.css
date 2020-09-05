@@ -1,0 +1,12 @@
+.teste{
+    background: linear-gradient(rgb(243, 155, 155), white, skyblue);
+}
+
+.img-tam{
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.bordas{
+    border-radius: 30px;
+}
