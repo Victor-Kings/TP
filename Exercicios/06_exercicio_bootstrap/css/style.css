@@ -1,7 +1,7 @@
 .carrosel {
     width: 80%;
     margin-left: 10%;
-    padding-top: 1%;
+    padding-top: 5%;
 }
 
 .borda {
@@ -17,6 +17,27 @@
     max-width: 100%;
 }
 
-.desc{
+.desc {
     font-family: serif;
+}
+
+.backgroundCards {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #0a0b1d;
+    border-radius: 1%;
+}
+
+.cards {
+    margin: 2%;
+    padding-bottom: 2%;
+}
+
+h3 {
+    padding-top: 2%;
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: 3vw;
 }
