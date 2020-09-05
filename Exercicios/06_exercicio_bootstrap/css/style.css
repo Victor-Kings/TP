@@ -16,3 +16,7 @@
     background-image: url("../img/galaxia.png");
     max-width: 100%;
 }
+
+.desc{
+    font-family: serif;
+}
