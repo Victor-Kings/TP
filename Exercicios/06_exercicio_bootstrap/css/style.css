@@ -4,6 +4,38 @@
     margin-top: 3%;
 }
 
+.setaVideo{
+    padding-top: 8.5vw;
+}
+
+.tituloTrailers{
+    font-family: arial;
+    font-size: clamp(1.5em, 1.5em + 1.5vw, 3em);
+    color: black;
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+}
+
+.tituloTrailers.hulkEThor {
+    padding-left: 42%;
+}
+
+.tituloTrailers.homemDeFerroECapitão {
+    padding-left: 26%;
+    color: red;
+}
+
+.tituloTrailers.viuvaNegra {
+    padding-left: 33%;
+    color:#B7410E;
+}
+
+.tituloTrailers.arqueiro {
+    padding-left: 36%;
+    color: green;
+}
+
 .borda {
     border: none !important;
 }
@@ -14,6 +46,11 @@
 
 .fundo {
     background-image: url("../img/galaxia.png");
+    max-width: 100%;
+}
+
+.fundo3{    
+    background-image: url("https://media3.giphy.com/media/YzU8NQXqtIKqc/giphy.gif?cid=ecf05e47n02r814lf5y63wt7i99a81rojtmgle0aizgjp4p3&rid=giphy.gif");
     max-width: 100%;
 }
 
@@ -47,4 +84,34 @@ h3 {
     margin-top: 5%;
     font-weight: 700;
     font-size: 3vw;
+}
+
+.tamanhoImagem{
+    width: 11.3vw;
+    height: 6vw;
+    padding-left: 5vw;
+}
+
+.box {
+    padding-left: calc(30.4vw - 25%);
+    padding-top: 5vw;
+    display: inline-block;
+}
+
+#espacamento{
+    padding-top: 5vw;
+}
+
+#footer{
+    background-color:  #4d4d4e;
+    color: white;
+    align: left;
+}
+
+.footer.copyright {
+    background-color: #161616;
+    color: white;
+    padding-top: 1vw;
+    padding-bottom: 1px;
+    text-align: center;
 }
