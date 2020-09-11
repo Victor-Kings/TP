@@ -134,8 +134,14 @@ h3 {
 
 li {
     color: #818181;
+    font-size: clamp(0.1em, 0.1em + 1vw, 2em);
 }
 
 h5 {
     color: #818181;
+    font-size: clamp(0.3em, 0.3em + 1.5vw, 2em);
+}
+
+.fimFooter{
+    font-size: clamp(0.2em, 0.2em + 1vw, 2em);
 }
