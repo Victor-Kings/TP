@@ -4,36 +4,53 @@
     margin-top: 3%;
 }
 
-.setaVideo{
+.footerStyle {
+    background-color: #0a0b1d;
+}
+
+.setaVideo {
     padding-top: 8.5vw;
 }
 
-.tituloTrailers{
+.tituloTrailers {
     font-family: arial;
     font-size: clamp(1.5em, 1.5em + 1.5vw, 3em);
     color: black;
     font-weight: bold;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
+.fontTitle {
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .tituloTrailers.hulkEThor {
-    padding-left: 42%;
+    padding-left: 46%;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .tituloTrailers.homemDeFerroECapitão {
-    padding-left: 26%;
-    color: red;
+    padding-left: 36%;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .tituloTrailers.viuvaNegra {
-    padding-left: 33%;
-    color:#B7410E;
+    padding-left: 39%;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .tituloTrailers.arqueiro {
-    padding-left: 36%;
-    color: green;
+    padding-left: 42%;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.borderImg {
+    border-width: medium;
+    border-style: solid;
+    border-color: #0a0b1d;
+    border-radius: 4px;
 }
 
 .borda {
@@ -49,7 +66,7 @@
     max-width: 100%;
 }
 
-.fundo3{    
+.fundo3 {
     background-image: url("https://media3.giphy.com/media/YzU8NQXqtIKqc/giphy.gif?cid=ecf05e47n02r814lf5y63wt7i99a81rojtmgle0aizgjp4p3&rid=giphy.gif");
     max-width: 100%;
 }
@@ -86,10 +103,9 @@ h3 {
     font-size: 3vw;
 }
 
-.tamanhoImagem{
-    width: 11.3vw;
-    height: 6vw;
-    padding-left: 5vw;
+.tamanhoImagem {
+    width: 10vw;
+    height: 12vw;
 }
 
 .box {
@@ -98,20 +114,28 @@ h3 {
     display: inline-block;
 }
 
-#espacamento{
+#espacamento {
     padding-top: 5vw;
 }
 
-#footer{
-    background-color:  #4d4d4e;
+#footer {
+    background-color: #4d4d4e;
     color: white;
     align: left;
 }
 
 .footer.copyright {
-    background-color: #161616;
+    background-color: #030416;
     color: white;
     padding-top: 1vw;
     padding-bottom: 1px;
     text-align: center;
+}
+
+li {
+    color: #818181;
+}
+
+h5 {
+    color: #818181;
 }
