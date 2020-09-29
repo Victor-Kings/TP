@@ -1,0 +1,41 @@
+var questions = [{
+        "nome": "Pantera",
+        "imagem": "./img/Pantera-Negra.jpg",
+        "respPrinc": 1,
+        "resp1": "respAPant",
+        "resp2": "respBPant",
+        "resp3": "respCPant",
+        "resp4": "respDPant"
+
+    },
+    {
+        "nome": "AdamWarlock",
+        "imagem": "./img/Adam-warlock.jpg",
+        "respPrinc": 2,
+        "resp1": "BARAIII",
+        "resp2": "respBAdam",
+        "resp3": "respCAdam",
+        "resp4": "respDAdam"
+
+    },
+    {
+        "nome": "Mercurio",
+        "imagem": "./img/Mercurio.jpeg",
+        "respPrinc": 2,
+        "resp1": "respAMErc",
+        "resp2": "respBMErc",
+        "resp3": "respCMErc",
+        "resp4": "respDMErc"
+
+    },
+    {
+        "nome": "Elektra",
+        "imagem": "./img/elektra.jpg",
+        "respPrinc": 4,
+        "resp1": "respAelek",
+        "resp2": "respBelek",
+        "resp3": "respCelek",
+        "resp4": "respDelek"
+
+    }
+];
