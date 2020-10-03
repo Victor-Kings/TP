@@ -20,44 +20,48 @@
 
 <body>
     <script>
-        $(document).ready(function() {
-            loadQuestion(0);
+        $(document).ready(function () {
+            loadQuestion(-1);
         });
     </script>
-    <div id="contQuiz"></div>
-    <div>Pontuação:</div>
-    <div id="imgQuiz"></div>
 
-    <div class="questQuiz">Quem é o personagem?</div>
+    <div align="center" id="pontuação">Pontuação: <span id="contQuiz">0</span> </div>
+    <div align="center">
+        <span  id="qtdImagens"> 0 / 11 - </span>
+        <span id="contador">00:00:00</span>
+    </div>
+
+    <div align="center" id="imgQuiz"></div>
+
+    <br />
+    <div align="center" class="questQuiz"> Quem é o personagem? </div>
 
     <div class="backgroundCards ">
         <div class="row cards ">
             <div class="col-md-5 " style="padding-top: 2% ">
                 <div class="card h-100 text-center">
-                    <a id="resp1" onclick="loadQuestion(1)">PersonagemX</a>
+                    <a id="resp0" onclick="loadQuestion(0)"></a>
                 </div>
             </div>
-            <div class="col-md-5 " style="padding-top: 2% ">
-                <div class="card h-100 text-center">
-                    <a id="resp2" onclick="loadQuestion(2)">PersonagemY</a>
+            <div class=" col-md-5 " style="padding-top: 2% ">
+                <div class="card h-100 text-center ">
+                    <a id="resp1" onclick="loadQuestion(1)"></a>
+
+                </div>
+            </div>
+            <div class=" col-md-5 " style="padding-top: 2% ">
+                <div class="card h-100 text-center ">
+                    <a id="resp2" onclick="loadQuestion(2)"></a>
 
                 </div>
             </div>
             <div class="col-md-5 " style="padding-top: 2% ">
-                <div class="card h-100 text-center">
-                    <a id="resp3" onclick="loadQuestion(3)">PersonagemZ</a>
-
-                </div>
-            </div>
-            <div class="col-md-5 " style="padding-top: 2% ">
-                <div class="card h-100 text-center">
-                    <a id="resp4" onclick="loadQuestion(4)">PersonagemX2</a>
-
+                <div class="card h-100 text-center ">
+                    <a id="resp3" onclick="loadQuestion(3)"></a>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

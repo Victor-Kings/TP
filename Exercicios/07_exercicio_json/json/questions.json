@@ -1,41 +1,123 @@
-var questions = [{
-        "nome": "Pantera",
+var questions = [
+    {
+        "nome": "Pantera", //1
         "imagem": "./img/Pantera-Negra.jpg",
-        "respPrinc": 1,
-        "resp1": "respAPant",
-        "resp2": "respBPant",
-        "resp3": "respCPant",
-        "resp4": "respDPant"
-
+        "respPrinc": "Pantera Negra",
+        "respostas": [
+            "Pantera Negra",
+            "Homem-Aranha",
+            "Senhor das Estrelas",
+            "Daredevil"
+        ]
     },
     {
-        "nome": "AdamWarlock",
+        "nome": "AdamWarlock", //2
         "imagem": "./img/Adam-warlock.jpg",
-        "respPrinc": 2,
-        "resp1": "BARAIII",
-        "resp2": "respBAdam",
-        "resp3": "respCAdam",
-        "resp4": "respDAdam"
-
+        "respPrinc": "Adam Warlock",
+        "respostas": [
+            "Thor",
+            "Adam Warlock",
+            "Thanos",
+            "Homem de Ferro"
+        ]
     },
     {
-        "nome": "Mercurio",
+        "nome": "Mercurio", //3
         "imagem": "./img/Mercurio.jpeg",
-        "respPrinc": 2,
-        "resp1": "respAMErc",
-        "resp2": "respBMErc",
-        "resp3": "respCMErc",
-        "resp4": "respDMErc"
-
+        "respPrinc": "Mercurio",
+        "respostas": [
+            "Deadpool",
+            "Mercurio",
+            "Visão",
+            "Senhor das Estrelas"
+        ]
     },
     {
-        "nome": "Elektra",
+        "nome": "Elektra", //4
         "imagem": "./img/elektra.jpg",
-        "respPrinc": 4,
-        "resp1": "respAelek",
-        "resp2": "respBelek",
-        "resp3": "respCelek",
-        "resp4": "respDelek"
-
+        "respPrinc": "Elektra",
+        "respostas": [
+            "Gamora",
+            "Namor",
+            "Viúva Negra",
+            "Elektra"
+        ]
+    },
+    {
+        "nome": "Hulk", //5
+        "imagem": "./img/Hulk.jpg",
+        "respPrinc": "Hulk",
+        "respostas": [
+            "Thanos",
+            "Homem de Ferro",
+            "Hulk",
+            "Venom"
+        ]
+    },
+    {
+        "nome": "Viúva Negra", //6
+        "imagem": "./img/Viuva_Negra.jpg",
+        "respPrinc": "Viúva Negra",
+        "respostas": [
+            "Gamora",
+            "Feiticeira Escarlate",
+            "Daredevil",
+            "Viúva Negra"
+        ]
+    },
+    {
+        "nome": "Thor", //7
+        "imagem": "./img/Thor.jpg",
+        "respPrinc": "Thor",
+        "respostas": [
+            "Loki",
+            "Thor",
+            "Logan",
+            "Adam Warlock"
+        ]
+    },
+    {
+        "nome": "Homem-Aranha", //8
+        "imagem": "./img/Homem-Aranha.jpg",
+        "respPrinc": "Homem-Aranha",
+        "respostas": [
+            "Venom",
+            "Homem-Aranha",
+            "Daredevil",
+            "Deadpool"
+        ]
+    },
+    {
+        "nome": "Deadpool", //9
+        "imagem": "./img/Deadpool.jpg",
+        "respPrinc": "Deadpool",
+        "respostas": [
+            "Deadpool",
+            "Homem-Aranha",
+            "Daredevil",
+            "Senhor das Estrelas"
+        ]
+    },
+    {
+        "nome": "Feiticeira Escarlate", //10
+        "imagem": "./img/Feiticeira.jpeg",
+        "respPrinc": "Feiticeira Escarlate",
+        "respostas": [
+            "Feiticeira Escarlate",
+            "Viúva Negra",
+            "Namor",
+            "Gamora"
+        ]
+    },
+    {
+        "nome": "Doutor Estranho", //11
+        "imagem": "./img/Doutor_Estranho.jpg",
+        "respPrinc": "Doutor Estranho",
+        "respostas": [
+            "Doutor Estranho",
+            "Senhor das Estrelas",
+            "Gavião Arqueiro",
+            "Capitão América"
+        ]
     }
 ];

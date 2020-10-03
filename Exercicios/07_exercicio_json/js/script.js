@@ -1,23 +1,110 @@
 var count = 0;
 var respCorreta = 0;
+var NumeroDaQuest = 0;
 
 function loadQuestion(resp) {
     var f = questions;
-    var indice = Math.floor((Math.random() * 4));
-    console.log("entrou");
-    document.getElementById('imgQuiz').innerHTML = "<img src=" + f[indice].imagem + ">";
-    document.getElementById('resp1').innerHTML = "RESPOSTA1" + f[indice].resp1;
-    document.getElementById('resp3').innerHTML = "RESPOSTA2" + f[indice].resp2;
-    document.getElementById('resp2').innerHTML = "RESPOSTA3" + f[indice].resp3;
-    document.getElementById('resp4').innerHTML = "RESPOSTA4" + f[indice].resp4;
+    var indice;
 
-    if (resp != 0) {
-        if (resp == respCorreta)
-            count++;
-        document.getElementById('contQuiz').innerHTML = count;
+    var indiceAlt = Math.floor((Math.random() * 4));
+
+    document.getElementById('qtdImagens').innerHTML = NumeroDaQuest + " / 11 – ";
+    NumeroDaQuest++;
+
+    if (NumeroDaQuest <= 11) {
+        do {
+            indice = Math.floor((Math.random() * 11));
+        } while (!f[indice]);
+
+        //console.log(document.getElementById("resp" + resp).value);
+        //if (resp != undefined) Aux = document.getElementById("resp" + resp).value;
+
+        var res;
+        for (var i = 0; i < 4; i++) {
+            document.getElementById('resp' + i).innerHTML = f[indice].respostas[(indiceAlt % 4)];
+            indiceAlt++;
+
+            if (f[indice].respPrinc == f[indice].respostas[(indiceAlt % 4)]) {
+                if (i == 3)
+                    res = 0;
+                else
+                    res = i + 1;
+                console.log("res" + res);
+            }
+        }
+
+        document.getElementById('imgQuiz').innerHTML = "<img src=" + f[indice].imagem + " class = editarImagens> ";
+
+        if (resp != -1) {
+            if (resp == respCorreta)
+                count++;
+
+            document.getElementById('contQuiz').innerHTML = count;
+        }
+
+        respCorreta = res;
+
+        delete f[indice];
+    } else {
+
+        if (resp != -1) {
+            if (resp == respCorreta) {
+                count++;
+            }
+            document.getElementById('contQuiz').innerHTML = count;
+        }
+
+        if (count != 0)
+            window.location.href = "./pages/PagResult.html?" + (count) + "=count=" + pausar() + "=tempo";
+        else
+            window.location.href = "./pages/PagResult.html?" + 0 + "=count=" + pausar() + "=tempo";
+
+        resetar();
     }
+}
 
-    respCorreta = f[indice].respPrinc;
+var hh = 0;
+var mm = 0;
+var ss = 0;
 
-    delete f[indice];
+var tempo = 1000; // 1000 milésimos equivalem a 1 segundo
+var cronometro;
+
+function comecar() {
+    cronometro = setInterval(() => { timer(); }, tempo);
+    console.log("entrou......");
+}
+
+function pausar() {
+    clearInterval(cronometro);
+    return document.getElementById('contador').innerText;
+}
+
+function resetar() {
+    clearInterval(cronometro);
+    hh = 0;
+    mm = 0;
+    ss = 0;
+
+    document.getElementById('contador').innerText = '00:00:00';
+}
+
+function timer() {
+    ss++;
+
+    if (ss == 60) {
+        ss = 0;
+        mm++;
+
+        if (mm == 60) {
+            mm = 0;
+            hh++;
+        }
+    }
+    var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
+    document.getElementById('contador').innerText = format;
+}
+
+window.onload = function () {
+    comecar();
 }

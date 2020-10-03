@@ -1,4 +1,37 @@
+.editarImagens {
+    width: 40vw;
+    height: 30vw;
+}
+
 .backgroundCards {
     width: 80%;
-    padding-left: 10%;
+    padding-left: 27.5%;
+}
+
+#contador{
+    text-align: center;
+}
+
+.questQuiz{
+    font-size: 2vw;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#contador{
+    font-size: 1.5vw;
+    font-family: tahoma;
+    font-weight: bold;
+}
+
+#pontuação{
+    font-size: 2vw;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#qtdImagens{
+    font-size: 1.5vw;
+    font-family: tahoma;
+    font-weight: bold;
 }
