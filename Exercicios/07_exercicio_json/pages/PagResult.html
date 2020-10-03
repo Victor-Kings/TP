@@ -7,7 +7,7 @@
 
     <script type="text/javascript" src="../js/scriptPage2.js"></script>
     <script type="text/javascript" src="./json/questions.json" charset="utf-8"></script>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <link href="./css/bootstrap.css" rel="stylesheet">
     <script src="./js/jquery.js"></script>
@@ -19,7 +19,7 @@
     <title>Resultado</title>
 </head>
 
-<body>
+<body class="resultfundo">
     <script>
         $(document).ready(function() {
             getQuery();
@@ -30,16 +30,13 @@
         });
     </script>
 
-    <div id="contQuiz"></div>
+    <div class="titulo" align="center"> RESULTADO </div>
 
-    <div id="imgQuiz"></div>
-    <div align="center">SCORE PAGINAAA 2</div>
+    <span class="acertos"> Você acertou: <span id="score"></span> questões de 11! </span>
 
-    <span> Você acertou: <span id="score"></span> questões de 11! </span>
+    <div class="tempo"> Tempo Total: <span style="padding-left: 25px;" id="tempo"> </span> </div>
 
-    <div> Tempo Total: <span id="tempo"> </span> </div>
-
-    <div> Resultando em um percentual total de  <span id="porcentagem"> de acertos </span></div>
+    <div class="percent"> Resultando em um percentual total de  <span id="porcentagem" > de acertos </span></div>
 
     <a class="editarBotao" href="../index.html"><img width="130vw" src="../img/Botao_refazer.png"></a>
 

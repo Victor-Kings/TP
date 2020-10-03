@@ -18,17 +18,17 @@
     <title>QuizMarvel</title>
 </head>
 
-<body>
+<body id="pers" class="teste">
     <script>
         $(document).ready(function () {
             loadQuestion(-1);
         });
     </script>
 
-    <div align="center" id="pontuação">Pontuação: <span id="contQuiz">0</span> </div>
+    <div align="center" class="questQuiz" id="pontuação">Pontuação: <span id="contQuiz">0</span> </div>
     <div align="center">
-        <span  id="qtdImagens"> 0 / 11 - </span>
-        <span id="contador">00:00:00</span>
+        <span  id="qtdImagens" class="questQuiz"> 0 / 11 - </span>
+        <span id="contador" class="questQuiz">00:00:00</span>
     </div>
 
     <div align="center" id="imgQuiz"></div>
@@ -38,7 +38,7 @@
 
     <div class="backgroundCards ">
         <div class="row cards ">
-            <div class="col-md-5 " style="padding-top: 2% ">
+            <div  class="col-md-5 " style="padding-top: 2% ">
                 <div class="card h-100 text-center">
                     <a id="resp0" onclick="loadQuestion(0)"></a>
                 </div>

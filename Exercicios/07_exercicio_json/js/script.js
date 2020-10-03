@@ -11,10 +11,47 @@ function loadQuestion(resp) {
     document.getElementById('qtdImagens').innerHTML = NumeroDaQuest + " / 11 – ";
     NumeroDaQuest++;
 
+
     if (NumeroDaQuest <= 11) {
         do {
             indice = Math.floor((Math.random() * 11));
         } while (!f[indice]);
+
+        switch(f[indice].nome){
+            case ("Pantera"):
+                document.getElementById('pers').className = 'pantera';
+                break;
+            case("AdamWarlock"):
+                 document.getElementById('pers').className = 'adamlock';
+                 break; 
+            case("Mercurio"):
+                document.getElementById('pers').className = 'mercurio';
+                break;
+            case("Elektra"):
+                document.getElementById('pers').className = 'elektra';
+                break;
+            case("Hulk"):
+                document.getElementById('pers').className = 'hulk';
+                break;
+            case("Viúva Negra"):
+                document.getElementById('pers').className = 'viuva';   
+                break;     
+            case("Thor"):
+                document.getElementById('pers').className = 'thor';     
+                break;
+            case("Homem-Aranha"):
+                document.getElementById('pers').className = 'miranha'; 
+                break;
+            case("Deadpool"):
+                 document.getElementById('pers').className = 'dead';     
+                 break; 
+            case("Feiticeira Escarlate"):
+                 document.getElementById('pers').className = 'feiticeira';     
+                 break; 
+            case("Doutor Estranho"):
+                 document.getElementById('pers').className = 'estranho';
+                 break;         
+        }
 
         //console.log(document.getElementById("resp" + resp).value);
         //if (resp != undefined) Aux = document.getElementById("resp" + resp).value;
@@ -108,3 +145,4 @@ function timer() {
 window.onload = function () {
     comecar();
 }
+
