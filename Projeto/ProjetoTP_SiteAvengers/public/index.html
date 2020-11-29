@@ -24,7 +24,8 @@
 <body class="fundo">
 
 
-    <nav class="navbar navbar-expand-lg navbar-light menu">
+
+    <nav id="testenav" class="navbar navbar-expand-lg navbar-light menu">
         <a class="navbar-brand" href="./index.html"><img width="90vw" src="./img/logo marvel.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,13 +43,12 @@
                 <li class="nav-item ">
                     <a class="nav-link  text-white " href="./pages/page3.html ">Cenas</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./pages/chat.html ">Chat</a>
-                </li>
+
             </ul>
 
         </div>
     </nav>
+
 
 
     <div class="carrosel">
@@ -177,7 +177,21 @@
 
         </div>
     </div>
-
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "b2be14cd-9ecd-4586-9d6a-6cdf27f7fa02", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "d6d1f7ee-72cf-41be-ae93-662c77368dd7", // The ID of your service instance.
+            onLoad: function(instance) {
+                instance.render();
+            }
+        };
+        setTimeout(function() {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+            document.head.appendChild(t);
+        });
+    </script>
 
     <div id="espacamento"></div>
     <footer class="footer footerStyle">
@@ -217,7 +231,15 @@
         <div align="center" class="footer copyright fimFooter">
             <p>© 2019 Copyright - Atividade com bootstrap; tema da MARVEL.</p>
         </div>
+
+
     </footer>
+
+
+
+
+
+
 </body>
 
 </html>
