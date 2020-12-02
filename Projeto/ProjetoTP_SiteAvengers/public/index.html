@@ -7,18 +7,27 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     </style>
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./javascripts/script.js"></script>
+
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./javascripts/Translate.js"></script>
+
     <script>
         $(function() {
             $("#accordion").accordion();
         });
     </script>
+
+    <!--<script>
+        $(document).ready(function() {
+            OpenPerson();
+        });
+    </script>-->
 </head>
 
 <body class="fundo">
@@ -112,7 +121,28 @@
 
 
     <div class="backgroundCards">
-        <h3>Filmes</h3>
+        <div>
+
+            <span id="TextFilme"> Filmes </span>
+
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Linguagem
+                  </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" onclick="translateAPI()">Inglês</a>
+                        <a class="dropdown-item" onclick="#">Espanhol</a>
+                        <a class="dropdown-item" onclick="#">Alemão</a>
+                        <a class="dropdown-item" onclick="#">Francês</a>
+
+                        <button onclick="myFunction()">Click
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row cards ">
 
@@ -121,7 +151,7 @@
                     <img src="https://i.ytimg.com/vi/48fKIXlxaXk/maxresdefault.jpg " class="card-img-top " alt="... ">
                     <div class="card-body ">
                         <h5 class="card-title "> Vingadores </h5>
-                        <p class="card-text ">Loki retorna à Terra enviado pelos chitauri, uma raça alienígena que pretende dominar os humanos. Com a promessa de que será o soberano do planeta, ele rouba o cubo cósmico dentro de instalações da S.H.I.E.L.D. e, com isso, adquire
+                        <p id="Vingadores" class="card-text ">Loki retorna à Terra enviado pelos chitauri, uma raça alienígena que pretende dominar os humanos. Com a promessa de que será o soberano do planeta, ele rouba o cubo cósmico dentro de instalações da S.H.I.E.L.D. e, com isso, adquire
                             grandes poderes. Loki os usa para controlar o dr. Erik Selvig e Clint Barton/Gavião Arqueiro, que passam a trabalhar para ele. No intuito de contê-los, Nick Fury convoca um grupo de pessoas com grandes habilidades, mas que
                             jamais haviam trabalhado juntas: Tony Stark/Homem de Ferro, Steve Rogers/Capitão América, Thor , Bruce Banner/Hulk e Natasha Romanoff/Viúva Negra. Só que, apesar do grande perigo que a Terra corre, não é tão simples assim conter
                             o ego e os interesses de cada um deles para que possam agir em grupo.</p>
@@ -136,7 +166,7 @@
                     <img src="https://i.ytimg.com/vi/X4hbRLXpoUM/maxresdefault.jpg " class="card-img-top " alt="... ">
                     <div class="card-body ">
                         <h5 class="card-title "> Vingadores era de Utron</h5>
-                        <p class="card-text ">Tentanto proteger o planeta de ameaças como as vistas no primeiro Os Vingadores, Tony Stark busca construir um sistema de inteligência artifical que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron.
+                        <p id="VingadoresUltron" class="card-text ">Tentanto proteger o planeta de ameaças como as vistas no primeiro Os Vingadores, Tony Stark busca construir um sistema de inteligência artifical que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron.
                             Capitão América, Homem de Ferro, Thor, Hulk, Viúva Negra e Gavião Arqueiro terão que se unir para mais uma vez salvar o dia.</p>
                     </div>
                     <div class="card-body" style="padding-top: 58%;">
@@ -150,7 +180,7 @@
 
                     <div class="card-body ">
                         <h5 class="card-title ">Vingadores Guerra Infinita</h5>
-                        <p class="card-text ">Em Vingadores: Guerra Infinita, Thanos enfim chega à Terra, disposto a reunir as Joias do Infinito. Para enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças entre
+                        <p id="VingadoresGuerra" class="card-text ">Em Vingadores: Guerra Infinita, Thanos enfim chega à Terra, disposto a reunir as Joias do Infinito. Para enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças entre
                             alguns de seus integrantes.</p>
                     </div>
                     <div class="card-body" style="padding-top: 69%;">
@@ -165,7 +195,7 @@
                     <img src="https://images8.alphacoders.com/100/1003220.png " class="card-img-top " alt="... ">
                     <div class="card-body ">
                         <h5 class="card-title ">Vingadores Ultimato</h5>
-                        <p class="card-text ">Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark vagando perdido no espaço sem
+                        <p id="VingadoresUltimato" class="card-text ">Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark vagando perdido no espaço sem
                             água nem comida, o Capitão América/Steve Rogers e a Viúva Negra/Natasha Romanov precisam liderar a resistência contra o titã louco.</p>
                     </div>
                     <div class="card-body">
