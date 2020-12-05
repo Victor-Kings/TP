@@ -1,4 +1,8 @@
-function translateAPI(idCards, SelectIdioma) {
+function translateAPI(idCards, SelectIdioma, verEnglish) {
+
+    if (verEnglish == 0) {
+        document.getElementById('languagens').className = 'imgEUA';
+    }
 
     let cont = 0,
         idioma;
@@ -52,7 +56,26 @@ function translateAPI(idCards, SelectIdioma) {
 }
 
 function translateOtherLanguagens(idCards, idioma) {
-    translateAPI(idCards, 'en');
-    setTimeout(() => { translateAPI(idCards, idioma); }, 2000);
+
+    switch (idioma) {
+        case ("es"):
+            document.getElementById('languagens').className = 'imgEspanha';
+            break;
+
+        case ("de"):
+            document.getElementById('languagens').className = 'imgAlemanha';
+            break;
+
+        case ("fr"):
+            document.getElementById('languagens').className = 'imgFranca';
+            break;
+
+        case ("pt"):
+            document.getElementById('languagens').className = 'imgLanguages';
+            break;
+    }
+
+    translateAPI(idCards, 'en', 1);
+    setTimeout(() => { translateAPI(idCards, idioma, 1); }, 2000);
 
 }

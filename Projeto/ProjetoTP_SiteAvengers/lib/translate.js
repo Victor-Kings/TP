@@ -6,9 +6,9 @@ const { IamAuthenticator } = require('ibm-watson/auth');
 const translator = new LanguageTranslatorV3({
     version: '2018-05-01',
     authenticator: new IamAuthenticator({
-        apikey: 'ePBfaBupiToEn93vyM9c6B5IcePSpkmihPtkasn0q2f-',
+        apikey: 'TGmf1QopcZYKfn50YOJmqa717mAVibXmcPAGuJGIDMUi',
     }),
-    serviceUrl: 'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/022075ef-43f0-4feb-8064-790294bc76b9',
+    serviceUrl: 'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/bfaa6e27-7f8e-43f5-a549-e82fd32df046',
 });
 
 module.exports = { translator };

@@ -154,3 +154,13 @@ h5 {
 .fimFooter {
     font-size: clamp(0.2em, 0.2em + 1vw, 2em);
 }
+
+.bottonband {
+    background-color: #ed1d24;
+    border: none;
+}
+
+.bottonband :active {
+    border: none;
+    background-color: #6e090c;
+}
