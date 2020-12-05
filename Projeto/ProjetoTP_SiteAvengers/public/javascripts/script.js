@@ -25,3 +25,8 @@ function OpenPerson() {
     }
 
 }
+
+function ClearCache() {
+
+    localStorage.setItem("lastIdioma", "pt");
+}

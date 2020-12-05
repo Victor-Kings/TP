@@ -25,7 +25,7 @@ router.post('/translator', function(req, res, next) {
         )
         .then(translationResult => {
             console.log("print dentro da rota" + JSON.stringify(translationResult, null, 2));
-            res.json(translationResult, null, 2);
+            //res.json(translationResult, null, 2);
         })
         .catch(err => {
             console.log('error:', err);

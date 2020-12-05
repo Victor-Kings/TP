@@ -23,16 +23,14 @@
         });
     </script>
 
-    <!--<script>
+    <script>
         $(document).ready(function() {
-            OpenPerson();
+            ClearCache();
         });
-    </script>-->
+    </script>
 </head>
 
 <body class="fundo">
-
-
 
     <nav id="testenav" class="navbar navbar-expand-lg navbar-light menu">
         <a class="navbar-brand" href="./index.html"><img width="90vw" src="./img/logo marvel.png"></a>
@@ -57,8 +55,6 @@
 
         </div>
     </nav>
-
-
 
     <div class="carrosel">
 
@@ -95,7 +91,7 @@
                 </div>
                 <div class="carousel-item">
                     <a href="./pages/Page2.html?5=flag" class="desc" style="padding-left: 45%;"> VIÚVA NEGRA </a>
-                    <img src="http://www.baltana.com/files/wallpapers-20/Marvel-Black-Widow-HD-Background-Wallpaper-48096.jpg" class="img-fluid" alt="viuva">
+                    <img src="http://www.baltana.com/files/wallpapers-20/Marvel-Black-Widow-HD-Background-Wallpaper-48096.jpg" class="img-fluid" alt="viuvaa">
 
                 </div>
                 <div class="carousel-item">
@@ -119,6 +115,10 @@
         </div>
     </div>
 
+    <script>
+        var idCards = ['Vingadores', 'VingadoresUltron', 'VingadoresGuerra', 'VingadoresUltimato'];
+    </script>
+
 
     <div class="backgroundCards">
         <div>
@@ -132,13 +132,14 @@
                     Linguagem
                   </button>
                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <a class="dropdown-item" onclick="translateAPI()">Inglês</a>
-                        <a class="dropdown-item" onclick="#">Espanhol</a>
-                        <a class="dropdown-item" onclick="#">Alemão</a>
-                        <a class="dropdown-item" onclick="#">Francês</a>
+                        <a class="dropdown-item" onclick="translateAPI(idCards, 'en')">Inglês</a>
+                        <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'es');">Espanhol</a>
+                        <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'de')">Alemão</a>
+                        <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'fr')">Francês</a>
+                        <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'pt')">Portugues</a>
 
-                        <button onclick="myFunction()">Click
-                            
+
+
                     </div>
                 </div>
             </div>
@@ -156,6 +157,7 @@
                             jamais haviam trabalhado juntas: Tony Stark/Homem de Ferro, Steve Rogers/Capitão América, Thor , Bruce Banner/Hulk e Natasha Romanoff/Viúva Negra. Só que, apesar do grande perigo que a Terra corre, não é tão simples assim conter
                             o ego e os interesses de cada um deles para que possam agir em grupo.</p>
                     </div>
+
                     <div class="card-body">
                         <a href="https://megafilmesonline.com/assistir-the-avengers-os-vingadores-2012/" target="_blank" class="card-link">Link do Filme</a>
                     </div>
@@ -185,7 +187,6 @@
                     </div>
                     <div class="card-body" style="padding-top: 69%;">
                         <a href="https://megafilmesonline.com/assistir-vingadores-guerra-infinita-dublado/" target="_blank" class="card-link">Link do Filme</a>
-
                     </div>
                 </div>
             </div>
@@ -200,7 +201,6 @@
                     </div>
                     <div class="card-body">
                         <a href="https://megafilmesonline.com/assistir-vingadores-ultimato-dublado-online-1/" target="_blank" class="card-link">Link do Filme</a>
-
                     </div>
                 </div>
             </div>
