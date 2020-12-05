@@ -1,9 +1,6 @@
 function OpenPerson() {
-    console.log("---ready memo");
     var URL = window.location.search.substring(1);
-    console.log(URL);
     var flag = URL.split('=');
-    console.log(flag[0]);
     var element;
     if (flag[0] == 2) {
         document.getElementById('collapse1').classList.add("show");
@@ -23,10 +20,8 @@ function OpenPerson() {
     if (flag[0] == 7) {
         document.getElementById('collapse6').classList.add("show");
     }
-
 }
 
 function ClearCache() {
-
     localStorage.setItem("lastIdioma", "pt");
 }

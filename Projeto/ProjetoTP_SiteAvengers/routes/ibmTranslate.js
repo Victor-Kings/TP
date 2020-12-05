@@ -6,16 +6,11 @@ const languageTranslator = require('../lib/translate');
 router.post('/translator', function(req, res, next) {
 
     var { textDocument, idioma } = req.body;
-    console.log("testepost" + textDocument + "   " + idioma);
-
-    //context = JSON.parse(textDocument);
 
     const translateParams = {
         text: textDocument,
         modelId: idioma,
     };
-
-    console.log("POST-PRINT");
 
     languageTranslator.translator.translate(translateParams,
             function(err, response) {
@@ -24,8 +19,7 @@ router.post('/translator', function(req, res, next) {
             }
         )
         .then(translationResult => {
-            console.log("print dentro da rota" + JSON.stringify(translationResult, null, 2));
-            //res.json(translationResult, null, 2);
+            console.log("Está dentro da rota" + JSON.stringify(translationResult, null, 2));
         })
         .catch(err => {
             console.log('error:', err);

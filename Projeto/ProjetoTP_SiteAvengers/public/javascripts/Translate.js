@@ -13,20 +13,14 @@ function translateAPI(idCards, SelectIdioma, verEnglish) {
         idioma = 'pt-' + SelectIdioma;
 
         localStorage.setItem("lastIdioma", SelectIdioma);
-        console.log("LOCALSTORE" + localStorage.getItem("lastIdioma"));
+    
     } else {
 
         idioma = localStorage.getItem("lastIdioma") + '-' + SelectIdioma;
 
         localStorage.setItem("lastIdioma", SelectIdioma);
-        console.log("LOCALSTORE" + localStorage.getItem("lastIdioma"));
-
     }
 
-
-    // console.log("TEXTO TEST" + textDocument);
-
-    //console.log("OQUE REALMENTE SERA TRADUZIDO" + idioma);
     let aux = idCards[cont];
     let textDocument = document.getElementById(aux).innerHTML;
 
@@ -38,13 +32,10 @@ function translateAPI(idCards, SelectIdioma, verEnglish) {
             textDocument = document.getElementById(aux).innerHTML;
             $.post("/ibmTranslate/translator", { textDocument, idioma },
                 function(returnedData, statusRequest) {
-                    console.log("entrou");
                     if (returnedData.status === 'ERRO') alert(returnedData);
                     else {
-                        console.log("--------RETORNO ----" + returnedData.data);
                         const TextData = JSON.stringify(returnedData.data.result.translations[0].translation);
                         const TData = TextData.slice(1, -1);
-                        console.log("AOBA" + TData);
                         document.getElementById(aux).innerHTML = TData;
                     }
                 }
