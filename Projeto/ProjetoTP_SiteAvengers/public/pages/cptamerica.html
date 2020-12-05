@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../javascripts/script.js"></script>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/styleaccordion.css" rel="stylesheet">
@@ -11,7 +12,21 @@
     <script src="../javascripts/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Capitão América</title>
+    <script type="text/javascript" src="../javascripts/Translate.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            ClearCache();
+        });
+
+        $(document).ready(function() {
+            OpenPerson();
+        });
+
+        var idCards = ['titleCapitao', 'DescCapitao', 'DescCapitao2', 'HomeCapitao', 'PersonagensCapitao', 'CenasCapitao', 'AtoresCapitao', 'PortuguesCapitao', 'FrancesCapitao', 'AlemaoCapitao', 'EspanholCapitao', 'InglesCapitao', 'TituloCapitao'];
+    </script>
+
+    <title id="titleCapitao">Capitão América</title>
 </head>
 
 <body class="cp-america" style="padding: 0%;">
@@ -24,26 +39,42 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link  text-white" href="../index.html ">Home</a>
+                <li class="nav-item">
+                    <a id="HomeCapitao" class="nav-link text-white" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item  active">
+                    <a id="PersonagensCapitao" class="nav-link text-white" href="./pages/Page2.html">Personagens</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./Page2.html ">Personagens</a>
+                    <a id="CenasCapitao" class="nav-link  text-white " href="../pages/page3.html ">Cenas</a>
                 </li>
+                <li class="nav-item ">
+                    <a id="AtoresCapitao" class="nav-link  text-white " href="../pages/actors.html">Atores</a>
+                </li>
+                <li>
+                    <div align="right">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
-                <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./page3.html ">Cenas</a>
-                </li>
-
-                <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./actors.html">Atores</a>
+                            <div class="btn-group bottonband1" role="group" style="margin-left: 50vw;">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle bottonband" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a id="languagens"> <img class="imgLanguages"> </a>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a id="InglesCapitao" class="dropdown-item" onclick="translateAPI(idCards, 'en', true)"> <span id="TextFilme"> Inglês </span> </a>
+                                    <a id="EspanholCapitao" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'es');">Espanhol</a>
+                                    <a id="AlemaoCapitao" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'de')">Alemão</a>
+                                    <a id="FrancesCapitao" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'fr')">Francês</a>
+                                    <a id="PortuguesCapitao" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'pt')">Português</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
-
         </div>
     </nav>
 
-    <h1 class="texto-central"> Christopher Robert Evans</h1>
+    <h1 id="TituloCapitao" class="texto-central">Capitão América</h1>
     <!-- Grid row -->
     <div class="row accordion-gradient-bcg d-flex justify-content-center" style="width: 100%;">
 
@@ -59,8 +90,7 @@
                     <!-- Card header -->
                     <div class="card-header rgba-stylish-strong z-depth-1 mb-1 teste bordas" role="tab" id="heading5">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                            <h5 class="mb-0 white-text text-uppercase font-thin titulo">
-                                Chris Evans <i class="fas fa-angle-down rotate-icon"></i>
+                            <h5 class="mb-0 white-text text-uppercase font-thin titulo">Christopher Robert Evans<i class="fas fa-angle-down rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -71,31 +101,15 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Chris_Evans_2020_%28cropped%29.jpg/330px-Chris_Evans_2020_%28cropped%29.jpg" alt="" class="img-tam">
                         </div>
                         <div class="card-body mb-1 rgba-grey-light white-text">
-                            <p class=" txt-persona">
+                            <p id="DescCapitao" class=" txt-persona">Christopher Robert Evans (Boston, 13 de junho de 1981) é um ator estadunidense. Ele começou sua carreira na série de televisão Opposite Sex (2000), e desde então apareceu em vários filmes, sendo mais conhecido por interpretar o Capitão América no Universo Cinematográfico da Marvel. Além disso, apareceu em obras como Not Another Teen Movie, Sunshine, Scott Pilgrim vs. the World, Gifted e Snowpiercer. Fez sua primeira grande descoberta como Johnny Storm / Tocha Humana no filme Quarteto Fantástico (2005) e sua sequência de 2007, papel o qual lhe rendeu uma indicação ao MTV Movie Awards e ao Teen Choice Awards. Em 2011, alcançou reconhecimento internacional após sua interpretação como Capitão América nos filmes da Marvel. Desde 2016, é um dos atores de maior bilheteria de todos os tempos na América do Norte, com seus filmes fazendo mais de 2,4 bilhões de dólares.</p>
 
-                                Christopher Robert Evans (Boston, 13 de junho de 1981) é um ator estadunidense. Ele começou sua carreira na série de televisão Opposite Sex (2000), e desde então apareceu em vários filmes, sendo mais conhecido por interpretar o Capitão América no Universo
-                                Cinematográfico da Marvel. Além disso, apareceu em obras como Not Another Teen Movie, Sunshine, Scott Pilgrim vs. the World, Gifted e Snowpiercer. Fez sua primeira grande descoberta como Johnny Storm / Tocha Humana no filme
-                                Quarteto Fantástico (2005) e sua sequência de 2007, papel o qual lhe rendeu uma indicação ao MTV Movie Awards e ao Teen Choice Awards. Em 2011, alcançou reconhecimento internacional após sua interpretação como Capitão América
-                                nos filmes da Marvel. Desde 2016, é um dos atores de maior bilheteria de todos os tempos na América do Norte, com seus filmes fazendo mais de 2,4 bilhões de dólares.</p>
-
-                            <p class=" txt-persona">
-                                Evans nasceu em Boston, Massachusetts, e foi criado na cidade de Sudbury. Sua mãe, Lisa Marie (nascida Capuano), é diretora artística do Concord Youth Theatre, e seu pai, G. Robert Evans III, é dentista.Sua mãe é descendente de italianos e irlandeses,
-                                enquanto o pai tem ascendência britânica e alemã.Seus pais se divorciaram em 1999. Ele tem uma irmã mais velha chamada Carly, um irmão mais novo chamado Scott e uma irmã mais nova chamada Shanna. Carly é graduada pela Tisch
-                                School of the Arts da Universidade de Nova York e professora de teatro e teatro do ensino médio na Lincoln-Sudbury Regional High School, enquanto Scott é ator e esteve no elenco da telenovela da ABC One Life to Live. Ele
-                                e seus irmãos foram criados como católicos, entretanto Evans expressou visões panteístas. e um grande interesse nas filosofias do budismo. O tio deles, Mike Capuano, representava o mesmo distrito do Congresso de Massachusetts,
-                                anteriormente representado por Tip O'Neill.Ele também tem três irmãos mais novos do segundo casamento de seu pai. Evans concluiu o ensino médio na Lincoln-Sudbury Regional High School. Ele se mudou para Nova York e teve
-                                aulas no Lee Strasberg Theatre and Film Institute.
-                            </p>
+                            <p id="DescCapitao2" class=" txt-persona">Evans nasceu em Boston, Massachusetts, e foi criado na cidade de Sudbury. Sua mãe, Lisa Marie (nascida Capuano), é diretora artística do Concord Youth Theatre, e seu pai, G. Robert Evans III, é dentista.Sua mãe é descendente de italianos e irlandeses, enquanto o pai tem ascendência britânica e alemã.Seus pais se divorciaram em 1999. Ele tem uma irmã mais velha chamada Carly, um irmão mais novo chamado Scott e uma irmã mais nova chamada Shanna. Carly é graduada pela Tisch School of the Arts da Universidade de Nova York e professora de teatro e teatro do ensino médio na Lincoln-Sudbury Regional High School, enquanto Scott é ator e esteve no elenco da telenovela da ABC One Life to Live. Ele e seus irmãos foram criados como católicos, entretanto Evans expressou visões panteístas. e um grande interesse nas filosofias do budismo. O tio deles, Mike Capuano, representava o mesmo distrito do Congresso de Massachusetts, anteriormente representado por Tip O'Neill.Ele também tem três irmãos mais novos do segundo casamento de seu pai. Evans concluiu o ensino médio na Lincoln-Sudbury Regional High School. Ele se mudou para Nova York e teve aulas no Lee Strasberg Theatre and Film Institute.</p>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
         <!--/.Accordion wrapper-->
-
     </div>
 
     <footer class="footer footerStyle">
@@ -104,8 +118,8 @@
                 <div class="col-4">
                     <h5 style="padding-left: 3em"> Início </h5>
                     <ul align="left">
-                        <li> <a href="./index.html">Home </a> </li>
-                        <li> <a href="./pages/page2.html ">Personagens </a> </li>
+                        <li> <a href="./index.html">Home </a></li>
+                        <li> <a href="./pages/page2.html ">Personagens</a> </li>
                         <li> <a href="./pages/page3.html">Cenas </a> </li>
                     </ul>
                 </div>
@@ -114,8 +128,7 @@
                     <h5> Contribuidores </h5>
                     <ul>
                         <li> Carlos Vieira </li>
-                        <li> Murilo Araujo </a>
-                        </li>
+                        <li> Murilo Araujo </a> </li>
                         <li> Victor Reis </li>
                     </ul>
                 </div>
@@ -128,21 +141,17 @@
                         <li> <img src="../img/gitHub.png" alt="Logo do git" style="width: 8%"> <a href="https://github.com/Victor-Kings"> &nbspVictor-Kings </a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
         </div>
         <div align="center" class="footer copyright fimFooter">
-            <p>© 2019 Copyright - Atividade com bootstrap; tema da MARVEL.</p>
+            <p>© 2020 Copyright - Projeto Final; Tema da MARVEL.</p>
         </div>
-
 
     </footer>
     <!-- Grid column -->
 
     </div>
     <!-- Grid row -->
-
 </body>
-
 </html>

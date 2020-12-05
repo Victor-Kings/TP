@@ -23,10 +23,10 @@
             OpenPerson();
         });
 
-        var idCards = ['ViuvaNegra', 'ViuvaNegra2', 'ViuvaNegra3'];
+        var idCards = ['titleViuva', 'TituloViuva', 'ViuvaNegra1', 'ViuvaNegra2', 'ViuvaNegra3', 'HomeViuva', 'PersonagensViuva', 'CenasViuva', 'AtoresViuva', 'PortuguesViuva', 'FrancesViuva', 'AlemaoViuva', 'EspanholViuva', 'InglesViuva'];
     </script>
 
-    <title>Viuva Negra</title>
+    <title id="titleViuva">Viúva Negra</title>
 </head>
 
 <body class="viuva-negra" style="padding: 0%;">
@@ -40,45 +40,42 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link  text-white" href="../index.html ">Home</a>
+                <li class="nav-item">
+                    <a id="HomeViuva" class="nav-link text-white" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item  active">
+                    <a id="PersonagensViuva" class="nav-link text-white" href="./pages/Page2.html">Personagens</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./Page2.html ">Personagens</a>
+                    <a id="CenasViuva" class="nav-link  text-white " href="../pages/page3.html ">Cenas</a>
                 </li>
-
                 <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./page3.html ">Cenas</a>
-                </li>
-
-                <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./actors.html">Atores</a>
+                    <a id="AtoresViuva" class="nav-link  text-white " href="../pages/actors.html">Atores</a>
                 </li>
                 <li>
-                    <div align="right" style="margin-left: 50vw;">
+                    <div align="right">
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
-                            <div class="btn-group bottonband1" role="group">
-                                <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle bottonband" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="btn-group bottonband1" role="group" style="margin-left: 50vw;">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle bottonband" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <a id="languagens"> <img class="imgLanguages"> </a>
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
-                                    <a class="dropdown-item" onclick="translateAPI(idCards, 'en', 0)"> <span id="TextFilme"> Inglês </span> </a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'es');">Espanhol</a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'de')">Alemão</a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'fr')">Francês</a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'pt')">Portugues</a>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a id="InglesViuva" class="dropdown-item" onclick="translateAPI(idCards, 'en', true)"> <span id="TextFilme"> Inglês </span> </a>
+                                    <a id="EspanholViuva" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'es');">Espanhol</a>
+                                    <a id="AlemaoViuva" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'de')">Alemão</a>
+                                    <a id="FrancesViuva" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'fr')">Francês</a>
+                                    <a id="PortuguesViuva" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'pt')">Português</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
-
         </div>
     </nav>
 
-    <h1 class="texto-central"> Viuva Negra</h1>
+    <h1 id="TituloViuva" class="texto-central">Viúva Negra</h1>
     <!-- Grid row -->
     <div class="row accordion-gradient-bcg d-flex justify-content-center" style="width: 100%;">
 
@@ -95,7 +92,7 @@
                     <div class="card-header rgba-stylish-strong z-depth-1 mb-1 teste bordas" role="tab" id="heading4">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
                             <h5 class="mb-0 white-text text-uppercase font-thin titulo">
-                                Viúva Negra <i class="fas fa-angle-down rotate-icon"></i>
+                                Scarlett Johansson <i class="fas fa-angle-down rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -106,18 +103,11 @@
                             <img src="https://br.web.img2.acsta.net/pictures/19/03/14/11/10/0992674.jpg" alt="" class="img-tam">
                         </div>
                         <div class="card-body mb-1 rgba-grey-light white-text">
-                            <p id="ViuvaNegra" class=" txt-persona">Scarlett Ingrid Johansson (Nova Iorque, 22 de novembro de 1984) é uma atriz e cantora norte-americana. Foi uma das atrizes mais bem pagas de 2014 a 2016, com múltiplas aparições na revista Forbes Celebrity 100 e tem uma estrela
-                                na Calçada da Fama. Nascida e criada em Manhattan, Nova Iorque, ela desejava ser atriz desde criança e apareceu pela primeira vez em um palco de um teatro em uma peça Off-Broadway. Johansson fez seu filme de estreia na
-                                comédia North (1994) e foi indicada ao Independent Spirit Awards por Manny & Lo (1996). Ela ganhou muito reconhecimento pelos seus trabalhos em O Encantador de Cavalos (1998) e Ghost World (2001).</p>
-
-                            <p id="ViuvaNegra2" class=" txt-persona">Johansson também atuou em Lost in Translation (atuação pelo qual ela ganhou o BAFTA de melhor atriz) e em Girl with a Pearl Earring (ambos de 2003). Ela foi nomeada quatro vezes ao Globo de Ouro, tanto por esses filmes como
-                                pelo drama A Love Song for Bobby Long (2004) e pela sua participação em Match Point (2005). Outros filme que ela fez durante este período foram o filme de mistério The Prestige (2006) e a comédia dramática Vicky Cristina
-                                Barcelona (2008). Também lançou dois álbuns de estúdio: Anywhere I Lay My Head (2008) e Break Up (2009), ambos aparecendo na Billboard 200.</p>
-                            <p id="ViuvaNegra3" class=" txt-persona">Em 2010, Johansson estreou na Broadway na reestreia de A View from the Bridge, atuação que lhe rendeu o Prêmio Tony de melhor atriz. Mais tarde, ela começou a interpretar a personagem Viúva Negra no universo da Marvel. Ela
-                                também interpretou com sua voz um sistema operacional de computador no filme Her (2013), atuou como uma alien no filme de ficção científica Under the Skin (2013) e uma mulher com habilidades psicocinéticas no filme Lucy
-                                (2014). Ela foi a atriz de maior bilheteria de 2018 e 2019, e também é, desde maio de 2017, uma das atrizes de maior bilheteria de todos os tempos na América do Norte. Em 2019, recebeu elogios por interpretar uma mãe solteira
-                                durante o período da Alemanha Nazista em Jojo Rabbit e uma atriz passando pelo divorcio em Marriage Story; pelos dois últimos filmes, recebeu duplas nomeações ao Oscar, BAFTA, Critics' Choice e aos Prêmios Screen Actors
-                                Guild de Melhor Atriz Coadjuvante e Melhor Atriz, respectivamente, além de ter recebido uma indicação ao Globo de Ouro de Melhor Atriz em Filme Dramático por Marriage Story.</p>
+                            <p id="ViuvaNegra1" class=" txt-persona">Scarlett Ingrid Johansson (Nova Iorque, 22 de novembro de 1984) é uma atriz e cantora norte-americana. Foi uma das atrizes mais bem pagas de 2014 a 2016, com múltiplas aparições na revista Forbes Celebrity 100 e tem uma estrela na Calçada da Fama. Nascida e criada em Manhattan, Nova Iorque, ela desejava ser atriz desde criança e apareceu pela primeira vez em um palco de um teatro em uma peça Off-Broadway. Johansson fez seu filme de estreia na comédia North (1994) e foi indicada ao Independent Spirit Awards por Manny & Lo (1996). Ela ganhou muito reconhecimento pelos seus trabalhos em O Encantador de Cavalos (1998) e Ghost World (2001).</p>
+                            
+                            <p id="ViuvaNegra2" class=" txt-persona">Johansson também atuou em Lost in Translation (atuação pelo qual ela ganhou o BAFTA de melhor atriz) e em Girl with a Pearl Earring (ambos de 2003). Ela foi nomeada quatro vezes ao Globo de Ouro, tanto por esses filmes como pelo drama A Love Song for Bobby Long (2004) e pela sua participação em Match Point (2005). Outros filme que ela fez durante este período foram o filme de mistério The Prestige (2006) e a comédia dramática Vicky Cristina Barcelona (2008). Também lançou dois álbuns de estúdio: Anywhere I Lay My Head (2008) e Break Up (2009), ambos aparecendo na Billboard 200.</p>
+                            
+                            <p id="ViuvaNegra3" class=" txt-persona">Em 2010, Johansson estreou na Broadway na reestreia de A View from the Bridge, atuação que lhe rendeu o Prêmio Tony de melhor atriz. Mais tarde, ela começou a interpretar a personagem Viúva Negra no universo da Marvel. Ela também interpretou com sua voz um sistema operacional de computador no filme Her (2013), atuou como uma alien no filme de ficção científica Under the Skin (2013) e uma mulher com habilidades psicocinéticas no filme Lucy (2014). Ela foi a atriz de maior bilheteria de 2018 e 2019, e também é, desde maio de 2017, uma das atrizes de maior bilheteria de todos os tempos na América do Norte. Em 2019, recebeu elogios por interpretar uma mãe solteira durante o período da Alemanha Nazista em Jojo Rabbit e uma atriz passando pelo divorcio em Marriage Story; pelos dois últimos filmes, recebeu duplas nomeações ao Oscar, BAFTA, Critics' Choice e aos Prêmios Screen Actors Guild de Melhor Atriz Coadjuvante e Melhor Atriz, respectivamente, além de ter recebido uma indicação ao Globo de Ouro de Melhor Atriz em Filme Dramático por Marriage Story.</p>
                         </div>
                     </div>
                 </div>
@@ -164,7 +154,7 @@
         </div>
         </div>
         <div align="center" class="footer copyright fimFooter">
-            <p>© 2019 Copyright - Atividade com bootstrap; tema da MARVEL.</p>
+            <p>© 2020 Copyright - Projeto Final; Tema da MARVEL.</p>
         </div>
 
 

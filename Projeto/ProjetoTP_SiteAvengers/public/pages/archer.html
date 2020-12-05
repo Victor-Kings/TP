@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../javascripts/script.js"></script>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/styleaccordion.css" rel="stylesheet">
@@ -11,10 +12,25 @@
     <script src="../javascripts/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Arqueiro</title>
+    <script type="text/javascript" src="../javascripts/Translate.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            ClearCache();
+        });
+
+        $(document).ready(function() {
+            OpenPerson();
+        });
+
+        var idCards = ['TituloDesArqueiro', 'titleArqueiro', 'DescArqueiro', 'DescArqueiro2', 'HomeArqueiro', 'PersonagensArqueiro', 'CenasArqueiro', 'AtoresArqueiro', 'PortuguesArqueiro', 'FrancesArqueiro', 'AlemaoArqueiro', 'EspanholArqueiro', 'InglesArqueiro'];
+    </script>
+
+    <title id="titleArqueiro">Arqueiro</title>
 </head>
 
 <body class="archer" style="padding: 0%;">
+    
     <nav class="navbar navbar-expand-lg navbar-light menu">
         <a class="navbar-brand" href="../index.html"> <img width="90vw" src="../img/logo marvel.png"></a>
 
@@ -24,26 +40,42 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link  text-white" href="../index.html ">Home</a>
+                <li class="nav-item">
+                    <a id="HomeArqueiro" class="nav-link text-white" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item  active">
+                    <a id="PersonagensArqueiro" class="nav-link text-white" href="./pages/Page2.html">Personagens</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./Page2.html ">Personagens</a>
+                    <a id="CenasArqueiro" class="nav-link  text-white " href="../pages/page3.html ">Cenas</a>
                 </li>
+                <li class="nav-item ">
+                    <a id="AtoresArqueiro" class="nav-link  text-white " href="../pages/actors.html">Atores</a>
+                </li>
+                <li>
+                    <div align="right">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
-                <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./page3.html ">Cenas</a>
-                </li>
-
-                <li class="nav-item ">
-                    <a class="nav-link  text-white " href="./actors.html">Atores</a>
+                            <div class="btn-group bottonband1" role="group" style="margin-left: 50vw;">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle bottonband" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a id="languagens"> <img class="imgLanguages"> </a>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a id="InglesArqueiro" class="dropdown-item" onclick="translateAPI(idCards, 'en', true)"> <span id="TextFilme"> Inglês </span> </a>
+                                    <a id="EspanholArqueiro" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'es');">Espanhol</a>
+                                    <a id="AlemaoArqueiro" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'de')">Alemão</a>
+                                    <a id="FrancesArqueiro" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'fr')">Francês</a>
+                                    <a id="PortuguesArqueiro" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'pt')">Português</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
-
         </div>
     </nav>
 
-    <h1 class="texto-central">Jeremy Lee Renner</h1>
+    <h1 id="TituloDesArqueiro" class="texto-central">Arqueiro</h1>
     <!-- Grid row -->
     <div class="row accordion-gradient-bcg d-flex justify-content-center" style="width: 100%;">
 
@@ -60,7 +92,7 @@
                     <div class="card-header rgba-stylish-strong z-depth-1 mb-1 teste bordas" role="tab" id="heading6">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
                             <h5 class="mb-0 white-text text-uppercase font-thin titulo">
-                                Jeremy <i class="fas fa-angle-down rotate-icon"></i>
+                                Jeremy Lee Renner <i class="fas fa-angle-down rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -71,15 +103,11 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Jeremy_Renner_SDCC_2014_%28cropped%29.jpg/300px-Jeremy_Renner_SDCC_2014_%28cropped%29.jpg" alt="" class="img-tam">
                         </div>
                         <div class="card-body mb-1 rgba-grey-light white-text">
-                            <p class=" txt-persona">
-                                Jeremy Lee Renner (Modesto, 7 de janeiro de 1971) é um ator, produtor cinematográfico, maquiador e ex-músico estadunidense famoso por sua atuação em filmes como Hurt Locker, Dahmer, The Avengers, Mission: Impossible – Ghost Protocol, The Bourne Legacy,
+                            <p id="DescArqueiro" class=" txt-persona">Jeremy Lee Renner (Modesto, 7 de janeiro de 1971) é um ator, produtor cinematográfico, maquiador e ex-músico estadunidense famoso por sua atuação em filmes como Hurt Locker, Dahmer, The Avengers, Mission: Impossible – Ghost Protocol, The Bourne Legacy,
                                 The Town e American Hustle.Renner já foi duas vezes indicado ao Óscar (pelas atuações em The Hurt Locker e The Town).</p>
-                            <p class=" txt-persona">
-
-                                Renner nasceu em Modesto, Califórnia, a mãe Valerie Cearley (Tague) e o pai Lee Renner, que gerenciou McHenry Bowl, um boliche de Modesto, na década de 1980. Seus pais casaram-se quando adolescentes e se divorciaram quando ele tinha dez anos. Ele é o
+                            <p id="DescArqueiro2" class=" txt-persona">Renner nasceu em Modesto, Califórnia, a mãe Valerie Cearley (Tague) e o pai Lee Renner, que gerenciou McHenry Bowl, um boliche de Modesto, na década de 1980. Seus pais casaram-se quando adolescentes e se divorciaram quando ele tinha dez anos. Ele é o
                                 mais velho de sete irmãos, sendo duas irmãs e quatro irmãos. Sua ascendência inclui alemão, inglês, escocês, sueco, irlandês e panamenho. Formou-se na Escola Secundária Fred C. Beyer[4] em Modesto em 1989. Ele participou
-                                do Modesto Junior College, onde estudou ciências da computação e criminologia, antes de tomar uma aula de teatro como eletivo e decidiu buscar a atuação.
-                            </p>
+                                do Modesto Junior College, onde estudou ciências da computação e criminologia, antes de tomar uma aula de teatro como eletivo e decidiu buscar a atuação.</p>
                         </div>
                     </div>
                 </div>
@@ -124,7 +152,7 @@
         </div>
         </div>
         <div align="center" class="footer copyright fimFooter">
-            <p>© 2019 Copyright - Atividade com bootstrap; tema da MARVEL.</p>
+            <p>© 2020 Copyright - Projeto Final; Tema da MARVEL.</p>
         </div>
 
 

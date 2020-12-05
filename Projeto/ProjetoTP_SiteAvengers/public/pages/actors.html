@@ -22,9 +22,10 @@
             ClearCache();
         });
 
-        var idCards = ['Avengers', 'Avengers2', 'Avengers3', 'Avengers4', 'Avengers5', 'Avengers6'];
+        var idCards = ['TitleAtores', 'Avengers', 'Avengers2', 'Avengers3', 'Avengers4', 'Avengers5', 'Avengers6', 'HomeActors', 'PersonagensActors', 'CenasActors', 'AtoresActors', 'PortuguesActors', 'FrancesActors', 'AlemaoActors', 'EspanholActors', 'InglesActors','Heroi1Actors', 'Heroi2Actors', 'Heroi3Actors', 'Heroi4Actors','Info1Actors','Info2Actors','Info3Actors','Info4Actors','Info5Actors','Info6Actors'];
     </script>
-    <title>Atores</title>
+
+    <title id="TitleAtores">Atores</title>
 </head>
 
 <body class="fundo2" style="padding: 0%; background-image: url(https://i.pinimg.com/originals/37/57/bc/3757bc57cf848daccb1defd7b7814efe.png);">
@@ -39,16 +40,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../index.html">Home</a>
+                    <a id="HomeActors" class="nav-link text-white" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item  active">
-                    <a class="nav-link text-white" href="#">Personagens</a>
+                    <a id="PersonagensActors" class="nav-link text-white" href="./pages/Page2.html">Personagens</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link  text-white " href="../pages/page3.html ">Cenas</a>
+                    <a id="CenasActors" class="nav-link  text-white " href="../pages/page3.html">Cenas</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link  text-white " href="../pages/actors.html">Atores</a>
+                    <a id="AtoresActors" class="nav-link  text-white " href="#">Atores</a>
                 </li>
                 <li>
                     <div align="right">
@@ -59,11 +60,11 @@
                                     <a id="languagens"> <img class="imgLanguages"> </a>
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                    <a class="dropdown-item" onclick="translateAPI(idCards, 'en', 0)"> <span id="TextFilme"> Inglês </span> </a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'es');">Espanhol</a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'de')">Alemão</a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'fr')">Francês</a>
-                                    <a class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'pt')">Portugues</a>
+                                    <a id="InglesActors" class="dropdown-item" onclick="translateAPI(idCards, 'en', true)"> <span id="TextFilme"> Inglês </span> </a>
+                                    <a id="EspanholActors" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'es');">Espanhol</a>
+                                    <a id="AlemaoActors" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'de')">Alemão</a>
+                                    <a id="FrancesActors" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'fr')">Francês</a>
+                                    <a id="PortuguesActors" class="dropdown-item" onclick="translateOtherLanguagens(idCards, 'pt')">Português</a>
                                 </div>
                             </div>
                         </div>
@@ -82,12 +83,12 @@
                 <div class="card h-100 ">
                     <img src="https://1.bp.blogspot.com/-cLNWvLtj4fk/WFbi46u-1JI/AAAAAAAAYBI/T_qnMxVqyeQB2F8uijPIJZkLfNgpivj4gCLcB/s1600/Gifs%2Banimados%2BVi%25C3%25BAva%2BNegra%2B%2528Marvel%2529%2B6.gif" class="card-img-top " style="height: 28vh;" alt="... ">
                     <div class="card-body ">
-                        <h5 class="card-title "> Viúva Negra </h5>
+                        <h5 id="Heroi1Actors" class="card-title "> Viúva Negra </h5>
                         <p id="Avengers" class="card-text Vingadores" style="line-height: 3vh;"> A personagem Viúva Negra tem sua primeira aparição no filme Homem deFerro 2, lançado em 2010, Natasha Romanoff é interpretada pela atriz Scarlett Johansson. A atriz revelou em entrevista que teve de passar por muitos treinamentos
                             e exercícios para entrar em forma e aprender um pouco de artes marciais. A atriz reprisou o papel da personagem em diversos filmes da Marvel.</p>
                     </div>
                     <div class="card-body" style="margin-top: 42vh;">
-                        <a href="./vivnegra.html" class="card-link" style="position: absolute;">Sobre a
+                        <a id="Info1Actors" href="./vivnegra.html" class="card-link" style="position: absolute;">Sobre a
                             Atriz</a>
                     </div>
                 </div>
@@ -96,14 +97,14 @@
                 <div class="card h-100 ">
                     <img src="https://gifimage.net/wp-content/uploads/2017/11/gif-homem-de-ferro-10.gif" class="card-img-top " style="height: 28vh;" alt="... ">
                     <div class="card-body ">
-                        <h5 class="card-title "> Homem de Ferro</h5>
+                        <h5 id="Heroi2Actors" class="card-title "> Homem de Ferro</h5>
                         <p id="Avengers2" class="card-text" style="line-height: 3vh;">Robert Downey Jr. interpreta Tony Stark nos filmes do Universo Marvel Cinematográfico. A estreia do personagem foi em 2008 em Homem de Ferro, a primeira produção independente do Marvel Studios. Assim como nos quadrinhos, Stark
                             é um bilionário que fornece armas para o governo norte-americano. Após a realização de uma demonstração de suas criações, ele é sequestrado por afegãos e durante o período que passa preso, desenvolve uma armadura para conseguir
                             escapar.
                         </p>
                     </div>
                     <div class="card-body" style="margin-top: 35vh;">
-                        <a href="./ironmen.html" class="card-link">Sobre o Ator</a>
+                        <a id="Info2Actors" href="./ironmen.html" class="card-link">Sobre o Ator</a>
                     </div>
                 </div>
             </div>
@@ -117,7 +118,7 @@
                             Infinita (2018) e também no mais recente filme Vingadores: Ultimato (2019). Nos filmes Thor é um dos heróis que transita entre Midgard e Asgard, luta com a equipe Vingadores e mantém sua imagem divina de deus do trovão.</p>
                     </div>
                     <div class="card-body" style="margin-top: 38vh;">
-                        <a href="./thor.html" class="card-link">Sobre o Ator</a>
+                        <a id="Info3Actors" href="./thor.html" class="card-link">Sobre o Ator</a>
 
                     </div>
                 </div>
@@ -127,14 +128,14 @@
                 <div class="card h-100 ">
                     <img src="https://i.pinimg.com/originals/b8/b0/2f/b8b02f96877ce8000608a5215977f6c7.gif" class="card-img-top " style="height: 28vh;" alt="... ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Capitão América</h5>
+                        <h5 id="Heroi3Actors" class="card-title ">Capitão América</h5>
                         <p id="Avengers4" class="card-text " style="line-height: 3vh;">O personagem é interpretado por Chris Evans no filme Capitão América: O Primeiro Vingador. Na adaptação o Capitão América utiliza três uniformes diferentes. O primeiro foi desenhado para as turnês de elevação de moral do Exército
                             e é bastante parecido ao original dos quadrinhos. Já o segundo, criado pelo próprio Steve Rogers, é uma mistura do primeiro com o uniforme militar da época. E por fim, o uniforme criado por Howard Stark. Em 2012, Evans reprisa
                             o papel em Os Vingadores - The Avengers, filme que rendeu US$ 1.518.594.910; na continuação para O Primeiro Vingador lançada em 2014 intitulada Capitão América 2: O Soldado Invernal, Vingadores: Era de Ultron (2015) e Capitão
                             América: Guerra Civil lançado em 2016.</p>
                     </div>
                     <div class="card-body" style="margin-top: 38vh;">
-                        <a href="./cptamerica.html" class="card-link">Sobre o Ator</a>
+                        <a id="Info4Actors" href="./cptamerica.html" class="card-link">Sobre o Ator</a>
 
                     </div>
                 </div>
@@ -144,9 +145,8 @@
                 <div class="card h-100 ">
                     <img src="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2016/09/hawk.gif" class="card-img-top " style="height: 28vh;" alt="... ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Gavião Arqueiro</h5>
-                        <p id="Avengers5" class="card-text " style="line-height: 3vh;">
-                            Clint Barton é interpretado por Jeremy Renner nos filmes do MCU. Ele aparece pela primeira vez em Thor (2011),como um agente da S.H.I.E.L.D. Em Os Vingadores, Clint é controlado por Loki, sendo um antagonista durante quase todo filme, após se recuperar
+                        <h5 id="Heroi4Actors" class="card-title ">Gavião Arqueiro</h5>
+                        <p id="Avengers5" class="card-text " style="line-height: 3vh;">Clint Barton é interpretado por Jeremy Renner nos filmes do MCU. Ele aparece pela primeira vez em Thor (2011),como um agente da S.H.I.E.L.D. Em Os Vingadores, Clint é controlado por Loki, sendo um antagonista durante quase todo filme, após se recuperar
                             do controle de Loki, ele se junta aos Vingadores para a batalha final. Capitão América: O Soldado Invernal (2014) contaria com uma participação do Gavião Arqueiro, porém, o personagem foi cortado do roteiro pela falta de tempo
                             na agenda do ator Jeremy Renner. A cena em questão mostraria o herói lutando com o Capitão América. Em Vingadores: Era de Ultron, é revelado que Clint tem uma família escondida pela S.H.I.E.L.D., ele é responsável por incentivar
                             Wanda a se tornar uma Vingadora.Gavião Arqueiro retorna mais uma vez em Capitão América: Guerra Civil (2016). Neste evento baseado na Guerra Civil, ele está na equipe antirregistro do Capitão América. Depois de se ausentar
@@ -154,7 +154,7 @@
                             de Ronin caçando criminosos, antes de ser recrutado de volta para os Vingadores.</p>
                     </div>
                     <div class="card-body" style="margin-top: 8vh;">
-                        <a href="./archer.html" class="card-link">Sobre o Ator</a>
+                        <a id="Info5Actors" href="./archer.html" class="card-link">Sobre o Ator</a>
 
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                             de lá. É recrutado por Natasha Romanoff (Scarlett Johansson) para ajudar a S.H.I.E.L.D. a encontrar o Tesseract roubado por Loki (Tom Hiddleston).</p>
                     </div>
                     <div class="card-body" style="margin-top: 31vh;">
-                        <a href="./hulk.html" class="card-link">Sobre o Ator</a>
+                        <a id="Info6Actors" href="./hulk.html" class="card-link">Sobre o Ator</a>
 
                     </div>
                 </div>
@@ -231,7 +231,7 @@
         </div>
         </div>
         <div align="center" class="footer copyright fimFooter">
-            <p>© 2019 Copyright - Atividade com bootstrap; tema da MARVEL.</p>
+            <p>© 2020 Copyright - Projeto Final; Tema da MARVEL.</p>
         </div>
     </footer>
 </body>

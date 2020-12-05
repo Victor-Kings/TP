@@ -1,6 +1,6 @@
 function translateAPI(idCards, SelectIdioma, verEnglish) {
 
-    if (verEnglish == 0) {
+    if (verEnglish == true) {
         document.getElementById('languagens').className = 'imgEUA';
     }
 
@@ -75,7 +75,6 @@ function translateOtherLanguagens(idCards, idioma) {
             break;
     }
 
-    translateAPI(idCards, 'en', 1);
-    setTimeout(() => { translateAPI(idCards, idioma, 1); }, 2000);
-
+    translateAPI(idCards, 'en', false);
+    setTimeout(() => { translateAPI(idCards, idioma, false); }, 2000);
 }
