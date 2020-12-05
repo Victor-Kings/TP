@@ -160,7 +160,7 @@ h5 {
     border: none;
 }
 
-.bottonband :active {
-    border: none;
-    background-color: #6e090c;
+.namelng {
+    cursor: pointer;
+    color: #fff;
 }

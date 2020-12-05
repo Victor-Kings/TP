@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-:root {
+ :root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -2728,8 +2728,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary:hover {
     color: #fff;
-    background-color: #5a6268;
-    border-color: #545b62;
+    background-color: #6e090c;
+    border-color: #6e090c;
 }
 
 .btn-secondary:focus,
@@ -2751,8 +2751,8 @@ fieldset:disabled a.btn {
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show>.btn-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #545b62;
-    border-color: #4e555b;
+    background-color: #6e090c;
+    border-color: #6e090c;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
@@ -3416,10 +3416,10 @@ input[type="button"].btn-block {
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
     font-size: 1rem;
-    color: #212529;
+    color: #0000;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #6e090c;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
